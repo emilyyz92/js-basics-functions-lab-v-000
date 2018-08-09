@@ -12,6 +12,7 @@ function distanceFromHqInBlocks(distance) {
 function distanceFromHqInFeet(distance) {
   let blocks;
   blocks = distanceFromHqInBlocks(distance);
+  blocks *= 264
   return blocks * 264;
 }
 
