@@ -11,7 +11,7 @@ function distanceFromHqInFeet(distance) {
   return distanceFromHqInBlocks(distance) * 264
 }
 
-function distanceFromHqInFeet(block1, block2) {
+function distanceTravelledInFeet(block1, block2) {
   let blocks = Math.max(block1, block2) - Math.min(block1, block2);
   return 264 * blocks;
 }
