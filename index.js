@@ -8,3 +8,9 @@ function distanceFromHqInBlocks(distance) {
   }
   return blocks;
 }
+
+function distanceFromHqInFeet(distance) {
+  let blocks;
+  blocks = distanceFromHqInBlocks(distance);
+  return blocks * 264;
+}
