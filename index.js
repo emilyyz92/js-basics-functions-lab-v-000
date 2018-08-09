@@ -14,3 +14,8 @@ function distanceFromHqInFeet(distance) {
   blocks = distanceFromHqInBlocks(distance);
   return blocks * 264;
 }
+
+function distanceFromHqInFeet(block1, block2) {
+  let blocks = Math.max(block1, block2) - Math.min(block1, block2);
+  return 264 * blocks;
+}
